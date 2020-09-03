@@ -1,7 +1,6 @@
 {
-  "name": "photo-share",
+  "name": "mern",
   "version": "0.1.0",
-  "description": "Photo Share Application",
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
