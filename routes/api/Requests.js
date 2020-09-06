@@ -23,7 +23,7 @@ router.get('/getRequest/:id', async (req, res) => {
     getRequest(req, res);
 });
 
-// @route   GET api/Requests/getRequest/search/:keyword
+// @route   GET api/Requests/search/:keyword
 // @desc    Search requests by keyword
 // @access  Public
 router.get('/search/:keyword', async (req, res) => {
