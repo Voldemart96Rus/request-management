@@ -61,7 +61,7 @@ const createRequest = async (req, res) => {
     } catch (error) {
         console.error(error);
         if (error.name === 'CastError') {
-            return res.status(400).json(['Cast Error']);
+            return res.status(404).send('Cast Error');
         }
         res.status(500).send('Server Error');
     }
@@ -88,7 +88,7 @@ const changeRequest = async (req, res) => {
     } catch (error) {
         console.error(error);
         if (error.name === 'CastError') {
-            return res.status(400).send('Cast Error');
+            return res.status(404).send('Cast Error');
         }
         res.status(500).send('Server Error');
     }
@@ -102,7 +102,7 @@ const deleteRequest = async (req, res) => {
     } catch (error) {
         console.error(error);
         if (error.name === 'CastError') {
-            return res.status(400).send('Cast Error');
+            return res.status(404).send('Cast Error');
         }
         res.status(500).send('Server Error');
     }
